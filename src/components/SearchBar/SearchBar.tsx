@@ -1,4 +1,4 @@
-import styles from "./searchBar.module.css";
+import styles from "./SearchBar.module.css";
 import toast from "react-hot-toast";
 
 interface QueryProps {
