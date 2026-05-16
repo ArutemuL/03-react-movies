@@ -15,7 +15,7 @@ function App() {
   const [error, setError] = useState(false);
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
 
-  async function handkeSearch(query: string) {
+  async function handleSearch(query: string) {
     setLoading(true);
     setError(false);
     setMovies([]);
@@ -35,7 +35,7 @@ function App() {
     <>
       <Toaster position="top-center" />
 
-      <SearchBar onSubmit={handkeSearch} />
+      <SearchBar onSubmit={handleSearch} />
 
       {loading && <Loader />}
 
